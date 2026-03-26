@@ -5,22 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>影片展示</title>
   <style>
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
       background: black;
+      overflow: hidden;
     }
     video {
       width: 100vw;
       height: 100vh;
       object-fit: cover;
       display: block;
+      background: black;
     }
   </style>
 </head>
 <body>
-  <video autoplay muted playsinline webkit-playsinline loop>
-  <source src="dianthusxrtmobile.mp4" type="video/mp4">
-</video>
-
+  <video
+    controls
+    muted
+    playsinline
+    webkit-playsinline
+    preload="auto"
+  >
+    <source src="dianthusxrtmobile.mp4" type="video/mp4" />
+    你的瀏覽器不支援影片播放。
+  </video>
 </body>
 </html>
